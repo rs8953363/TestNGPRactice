@@ -1,6 +1,7 @@
 package com.tyfa.tests;
 
 import com.tyfa.utilities.*;
+import org.openqa.selenium.*;
 import org.testng.annotations.*;
 
 import java.lang.ref.*;
@@ -44,6 +45,9 @@ public class GoogleSearchTest {
         //get() is used to navigate particular website and wait till page load. driver. It doesn't have browser history
         // navigate() is used to navigate to particular URL and does not wait to page load. It maintains browser history
         // or cookies to navigate back or forward.
+
+//        Driver.getDriver().findElement(By.locatorKind) only one
+//        Driver.getDriver().findElements(By.locatorKind) lists all the elements
 
 
 

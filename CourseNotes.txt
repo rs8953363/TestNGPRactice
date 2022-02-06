@@ -1,0 +1,56 @@
+ <div class = "w3-clear" id="yazi"></div>
+//                tagName :  div
+//                cssSelector("div")
+//                cssSelector(".w3-clear")
+//                cssSelector("div.w3-clear")
+//                cssSelector(#yazi)
+//                cssSelector("div#yazi")
+//                cssSelector("div#yazi.w3-clear") Order of id or class is not important as long as tagName is at the beginning
+//
+//        <div class = "baslik logo"></div>
+//                cssSelector("div")
+//                cssSelector(".baslik")
+//                cssSelector(".logo")
+//                cssSelector(".baslik.logo")
+//                cssSelector("div.baslik.logo")
+//
+//                        <div class="icerik">
+//                         <span class = "yazi">
+//                            Selamlar
+//                            </span>
+//                        </div>
+//
+//                cssSelector("div")
+//                cssSelector("span")
+//                cssSelector("span.yazi")
+//                cssSelector(".icerik")
+//                cssSelector(".yazi")
+//                cssSelector(".icerik .yazi")//Parent icerik, child yazi
+//                cssSelector("div.icerik.yazi")
+//                cssSelector(div.icerik span.yazi)
+//
+////If there are two class names then you cannot use className as a locator. You need to use cssSelector.
+//        <a class="link google"
+//                href="https://google.com">
+//                        Google
+//                        </a>
+//                Can we find locator by id? No, by Name? No, by ClassName? No (Because there are two class names),
+//        by cssSelector? Yes (.link.google)
+
+//Diff btw xpath and cssSelector: With XPath, we can traverse both forward and backward, whereas a CSS selector only moves forward.
+// Xpath allows bidirectional flow which means the traversal can be both ways from parent to child and child to parent as well.
+// Css allows only one directional flow which means the traversal is from parent to child only.
+// Xpath is slower in terms of performance and speed. Css has better performance and speed than xpath.
+
+/*Absolute Xpath: It contains the complete path from the Root Element to the desire element. Relative Xpath: This is more
+like starting simply by referencing the element you want and go from the particular location. You use always the
+Relative Path for testing of an element.
+ */
+        //You can use xpath for all WebElements
+
+ xpath Special Circumstances
+ //tagName[@attribute="value"]
+ //tagName[.="value"]
+ //tagName[@attribute1="value1" or @attribute2="value2"]
+ //*[.="text"]
+ //*[contains(text(),"Gift")]
