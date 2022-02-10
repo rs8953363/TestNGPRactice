@@ -45,6 +45,6 @@ public class AmazonTestLocators {
         }
         Driver.getDriver().findElement(By.id("box"));
         Driver.getDriver().findElements(By.cssSelector("#box"));//cssSelector(#id)
-
+//If you find WebElements in tests, it sshows you're not very professional and are not familiar with POM
     }
 }

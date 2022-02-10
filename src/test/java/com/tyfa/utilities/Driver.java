@@ -14,7 +14,7 @@ public class Driver {
     public static WebDriver getDriver(){
         if (driver == null) {
 
-            //The following line is to access the browser value of ConfiguraationReader class. It will return the browser
+            //The following line is to access the browser value of ConfigurationReader class. It will return the browser
             // which is chrome. ConfigurationReader is used to get the information in the configuraation.properties class.
             String browser = ConfigurationReader.getProperty("browser");
             String muhendis = ConfigurationReader. getProperty("engineer");

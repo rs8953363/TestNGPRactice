@@ -13,7 +13,7 @@ public class ConfigurationReader {
 
     static{//static block runs as soon as program runs
         String path = "configuration.properties";
-        FileInputStream file = null;//this line reads the configuratio.properties class
+        FileInputStream file = null;//this line reads the configuration.properties class
         try {
             file = new FileInputStream(path);
             properties = new Properties();
