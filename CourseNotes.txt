@@ -63,3 +63,16 @@ corresponding web page elements. Using these elements, testers can perform opera
 Page Factory is a class provided by Selenium WebDriver to support Page Object Design patterns. In Page Factory, testers
 use @FindBy annotation. The initElements method is used to initialize web elements.
 @FindBy: An annotation used in Page Factory to locate and declare web elements using different locators.
+
+https://w3schools.com Locators for a web table
+Access to headings: //table/thead/tr/th  or   //table/tbody/tr/th   or  //table//th
+Access to all lines in the table: //table/tbody/tr
+Access to all cells in the table: //table/tbody/td
+5th Cells in a row: (//table/tbody/tr)[5]
+Only a specific column (//table)[1]//tr/td[3]
+5th row and 2nd column
+(//table)[1]//tr[5]/td[2]
+
+"/" helps you to search only child elements
+"// helps you to search both child elements and grandchildren elements
+
