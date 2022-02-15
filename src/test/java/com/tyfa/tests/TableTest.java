@@ -9,7 +9,7 @@ import java.util.*;
 
 public class TableTest {
 
-    W3Schools school = new W3Schools();
+    W3Schools schools = new W3Schools();
 
     @Test
     public void allTitles(){
@@ -18,19 +18,25 @@ public class TableTest {
 
         //List<WebElement>
 
-        for (WebElement element: school.titles){
+        for (WebElement element: schools.titles){
             System.out.println(element.getText());
         }
     }
     @Test
     public void allCells(){
+        String url = "https://www.w3schools.com/html/html_tables.asp";
+        Driver.getDriver().get(url);
 
+        for (WebElement element: schools.cells){
+            System.out.println(element.getText());
+        }
     }
 
     @Test
     public void allTitlesReusableMethods(){
         String url = "https://www.w3schools.com/html/html_tables.asp";
         Driver.getDriver().get(url);
+
         List<WebElement> list = ReusableMethods.getTitles();
 
         for (WebElement element : list){
@@ -40,10 +46,10 @@ public class TableTest {
 
     @Test
     public void rowColumnTest(){
-        Test
-        public void allTitlesReusableMethods(){
             String url = "https://www.w3schools.com/html/html_tables.asp";
             Driver.getDriver().get(url);
 
+            WebElement element = ReusableMethods.getRowAndColumn(5,3);
+            System.out.println(element.getText());
     }
 }
