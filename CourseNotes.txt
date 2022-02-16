@@ -76,3 +76,6 @@ Only a specific column (//table)[1]//tr/td[3]
 "/" helps you to search only child elements
 "// helps you to search both child elements and grandchildren elements
 
+Apachi POI: is a library that helps us to make a connection between Java and excel files. It's a required dependency to
+read the Microsoft Excel files.
+Resources file: is used to keep the files we need. In Cucumber framework, we use this file to p the feature files. to
