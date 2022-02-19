@@ -46,12 +46,32 @@ public class ReadExcel {
         int rowNumber = sheet.getPhysicalNumberOfRows();
         System.out.println(rowNumber);
 
-        for (int i = 0; i < lastRow; i++) {
-            Cell data = sheet.getRow(i).getCell(2);
-            System.out.println(data.toString());
+        //To find the values in last column
+//        for (int i = 0; i < lastRow; i++) {
+//            Cell data = sheet.getRow(i).getCell(2);
+//            System.out.println(data.toString());
+//        }
 
+//2nd solution: To find the values in last column
+        for (Row row : sheet){
+            System.out.println(row.getCell(2).toString());
+        }
+        //Get the number of columns
+        int numberOfCOlumns = sheet.getRow(2).getLastCellNum();
+        System.out.println(numberOfCOlumns);
+
+//        //To get the values in row 2
+//        for (int k = 0; k < numberOfCOlumns; k++) {
+//            Cell data = sheet.getRow(2).getCell(k);
+//            System.out.println(data.toString());
+//        }
+
+        //2nd solution: To get the values in row 2
+        for(Cell cell : sheet.getRow(2)){
+            System.out.println(cell.toString());
         }
 
+        excel.close();
         file.close();
     }
 }
