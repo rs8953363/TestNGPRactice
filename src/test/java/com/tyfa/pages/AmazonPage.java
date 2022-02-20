@@ -17,5 +17,6 @@ public class AmazonPage {
     @FindBy (linkText = "Gift Cards")
     public WebElement giftCardLink;
 
-
+    @FindBy (id = "searchDropdownBox")
+    public WebElement categoryList;
 }
